@@ -92,7 +92,7 @@ class TodoList(Resource):
 
   def post(self):
     args = parser.parse_args()
-    id = args['id']
+    id = int(args['id'])
     #tasks = Task.query.all()
     #todo_id = len(tasks) + 1
     todo_id = id
